@@ -15,3 +15,4 @@
         * Sequence
         * Search
 3. Lo-Fi Wireframes
+    1. ![Home Wireframe](img/...)
