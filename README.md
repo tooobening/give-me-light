@@ -19,12 +19,12 @@
 
     1. **Representation/Interaction**
 
->        ![Image of Representation](img/proposal_representation_table.png?raw=true "Representation Table")
+       ![Image of Representation](img/proposal_representation_table.png?raw=true "Representation Table")
 
 
-        **Framework**
+    2. **Framework**
 
->        ![Image of Framework](img/proposal_framework.jpg?raw=true "Framework")
+        ![Image of Framework](img/proposal_framework.jpg?raw=true "Framework")
 
 
 3. **Lo-Fi Wireframes**
