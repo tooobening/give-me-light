@@ -17,7 +17,7 @@
 
     1. **Representation/Interaction**
 
-       ![Image of Representation](img/proposal_representation_table.jpg?raw=true "Representation Table")
+       ![Image of Representation](img/proposal_representation_table.png?raw=true "Representation Table")
 
 
 3. **Lo-Fi Wireframes**
