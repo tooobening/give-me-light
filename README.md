@@ -24,11 +24,10 @@
 
 3. **Lo-Fi Wireframes**
 
-    1. **Scenario #1 Wireframe**
+    1. **Webpage Wireframe**
 
-    ![Scenario #1 Wireframe](img/scenario1_wireframe.png?raw=true "scenario1_wireframe")
+    ![Scenario #2 Wireframe](img/web_wireframe.png?raw=true "webpage wireframe")
 
+    2. **Mobile Wireframe**
 
-    2. **Scenario #2 Wireframe**
-
-    ![Scenario #2 Wireframe](img/scenario2_wireframe.png?raw=true "scenario2_wireframe")
+    ![Scenario #2 Wireframe](img/mobile_wireframe.png?raw=true "mobile wireframe")
