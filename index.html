@@ -3,30 +3,37 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
+            <title>Northern Lights</title>
 
         <!--put your external stylesheet links here-->
-        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@1.3.0/dist/css/L.Control.OpenCageData.Search.min.css" />
+        <link rel="stylesheet" href="css/style.css">
+
         <!--[if IE<9]>
             <link rel="stylesheet" href="css/style.ie.css">
         <![endif]-->
 
-         <!--you can also place internal styles here;
-             place these within <style> tags-->
-        
+        <!--you can also place internal styles here
+        place these within <style> tags-->
+
     </head>
-    <style></style>
+
     <body>
-        <!-- <div id="main">
-            <div id="map" style="float:left"></div>
-            <div id="bar1" style="float:left"></div>
-        </div> -->
         <!--put your initial page content here-->
-        <!-- Make sure you put this AFTER Leaflet's CSS -->      
+        <div id="map"></div>
+
+        <!--you can also use this space for internal scripts;
+        place these within <script> tags-->
+
         <!--put your external script links here-->
-        <script type="text/javascript" src="lib/d3.js"></script>
-        <script type="text/javascript" src="lib/topojson.js"></script>
-        <script type="text/javascript" src="lib/d3-geo-projection.min.js"></script>
-        <script type="text/javascript" src="js/leaflet-search.src.js"></script>
-        <script type="text/javascript" src="js/simple-statistics.min.js"></script>
+        <script type="text/javascript" src="lib/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@1.3.0/dist/js/L.Control.OpenCageSearch.min.js"></script>
+        <script type="text/javascript" src="lib/d3/d3.js"></script>
+        <script type="text/javascript" src="lib/topojson/topojson.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/simple-statistics@7.0.8/dist/simple-statistics.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 
     </body>
+</html>
