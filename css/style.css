@@ -37,3 +37,10 @@ body {
 #geocode-selector .selected:hover {
 	background-color: #49e;
 }
+
+#mapid { /*#id or .class*/
+    height: 480px;
+    width: 100%;
+    display: inline-block;
+
+}
