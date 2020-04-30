@@ -24,7 +24,38 @@ var control = L.Control.openCageSearch(options).addTo(mymap);
 // }).addTo(mymap);
 
 
-//pop up for each  Feature
+// Concave hull polygon (135 in total)
+//put points with the same clustering in the same array
+arr={}
+for (i=0;i<135;i++){
+    arr[i]=[];
+}
+// console.log(arr[134])
+for (var i = 0; i<northern.features.length; i++){
+    for (var dbscanCluster = 0; dbscanCluster<135; dbscanCluster++){
+        if (northern.features[i].properties.dbscan === dbscanCluster){
+            arr[dbscanCluster].push(northern.features[i])
+        }
+        else{
+            continue
+        }
+    }
+    
+}
+//turf for each clustering array
+arrPoints={}
+for (i=0;i<135;i++){
+  arrPoints[i]=[];
+}
+
+for (i=0;i<135;i++){
+  var points = turf.featureCollection(arr[i])
+  let options = {units: 'kilometers', maxEdge: 100000};
+  var hull = turf.concave(points, options);
+  L.geoJSON(hull,{color:'#9b3070',weight:1}).addTo(mymap); //draw each hull in loop
+}
+
+//Pop up for each  Feature
 function onEachFeature(feature, layer) {
   var popupContent = "<p>Check out the image! ";
   
@@ -61,35 +92,4 @@ L.geoJSON(northern, {
     });
   }
 }).addTo(mymap);
-
-// Concave hull polygon (135 in total)
-//put points with the same clustering in the same array
-arr={}
-for (i=0;i<135;i++){
-    arr[i]=[];
-}
-// console.log(arr[134])
-for (var i = 0; i<northern.features.length; i++){
-    for (var dbscanCluster = 0; dbscanCluster<135; dbscanCluster++){
-        if (northern.features[i].properties.dbscan === dbscanCluster){
-            arr[dbscanCluster].push(northern.features[i])
-        }
-        else{
-            continue
-        }
-    }
-    
-}
-//turf for each clustering array
-arrPoints={}
-for (i=0;i<135;i++){
-  arrPoints[i]=[];
-}
-
-for (i=0;i<135;i++){
-  var points = turf.featureCollection(arr[i])
-  let options = {units: 'kilometers', maxEdge: 100000};
-  var hull = turf.concave(points, options);
-  L.geoJSON(hull,{color:'#9b3070',weight:1}).addTo(mymap); //draw each hull in loop
-}
 
