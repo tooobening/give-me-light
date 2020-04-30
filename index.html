@@ -1,25 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset=utf-8 />
-<title></title>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
 
-</head>
-<body>
-    <!--put your initial page content here-->
-    <div id = "mapid"></div>
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <!-- <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="crossorigin=""></script> -->
-    <!-- Mapbox-->
-    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
-    <!--put your external script links here-->
-    <script type="text/javascript" src="lib/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="lib/leaflet.js"></script>
-    <!-- <script type="text/javascript" src="js/quickstartTutorial.js"></script> -->
-    <!-- <script type="text/javascript" src="js/geojsonTutorial.js"></script>-->
-    <script type="text/javascript" src="js/main.js"></script>
+        <!--put your external stylesheet links here-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@1.3.0/dist/css/L.Control.OpenCageData.Search.min.css" />
+
+        <!-- <link rel="stylesheet" href="lib/leaflet.css"> -->
+ 
+        <!--[if IE<9]>
+            <link rel="stylesheet" href="css/style.ie.css">
+        <![endif]-->
+
+         <!--you can also place internal styles here;
+             place these within <style> tags-->
+        
+    </head>
+
+    <body>
+        <!--put your initial page content here-->
+        <div id ="title">
+            <h3>Find the lights@</h3>
+            <p><b>Geography Department, UW-Madison</b> </p>
+
+        </div>
+        <div id="mapid" style="width: 1300px; height: 650px; position: relative"></div>
     
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+        
+        <!-- Add leaflet ajax for loading geojson --> 
+        <script type="text/javascript" src="lib/leaflet.ajax.min.js"></script>
+        <!--put your external script links here-->
+        <!-- <script type="text/javascript" src="lib/leaflet.js"></script> -->
+        <script type="text/javascript" src="lib/leaflet.ajax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@1.3.0/dist/js/L.Control.OpenCageSearch.min.js"></script>
+        <script type="text/javascript" src="lib/jquery-3.4.1.js"></script> -->
+        <script type="text/javascript" src="lib/hull.js"></script>
+        <script src="lib/geo.js"></script>
+        <script src="lib/geoNorvay600k.js"></script>
+        <script src="lib/geoDateBorder.js"></script>
+        <!-- <script type="text/javascript" src="js/main.js"></script> -->
+        <script type="text/javascript" src="js/northern.js"></script>
+        <!-- <script type="text/javascript" src="js/arr.js"></script> -->
+        <script type="text/javascript" src="js/turf-test.js"></script>
+                <script src="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@1.3.0/dist/js/L.Control.OpenCageSearch.min.js"></script>
 
-</body>
-</body>
-</html>
+    
+    </body>
