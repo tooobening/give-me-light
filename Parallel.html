@@ -1,0 +1,95 @@
+<!-- Code from d3-graph-gallery.com -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<div id="button"><a href="#" class="myButton">Reset</a></div>
+<h3 id ="p_chartTitle">Northern Lights Color Pallette</h3>
+<svg class = "palette" width="700" height="40">
+  <g id="colorbar" transform="translate(40,10)"></g>
+</svg>
+<div class="parellel">
+<!-- Create a div where the graph will take place -->
+  <div class="parallel-us">
+    <h3 id ="p_chartTitle">USA</p></div>
+<div class="parallel-ca">
+  <h3 id ="p_chartTitle">Canada</p></div>
+
+</div>
+</div>
+
+<!--style -->
+<style>
+.palette{
+  margin: 0em 20em;
+  position:relative;
+  float:left;
+}
+#p_chartTitle{
+  margin: 0pt;
+  text-align: center;
+  color:bisque;
+  font-family:"AlternateGothic2 BT";
+  font-size: 22pt;
+}
+
+body{
+  background-color: black;
+}
+.parallel{
+  float:left'
+}
+.parallel-us{
+  float:left;
+  padding:0.1em;
+}
+.parallel-ca{
+  float:left;
+  padding:0.1em;
+}
+#button{
+  background-color: black;
+  padding:0.5em 1em;
+}
+.axis {
+  opacity: 0.4;
+}
+.axis:hover {
+  opacity: 1;
+}
+/* Axis tick */
+.tick text,line{
+  stroke:bisque;
+  fill:bisque;
+  font-size: 12pt;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* Axis */
+.domain { 
+  stroke:cornsilk;
+}
+/* reset button */
+.myButton {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, bisque 5%, #f24437 100%);
+	background-color:bisque;
+	border-radius:15px;
+	border:1px solid bisque;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+</style>
+
+<body>
+  <script type="text/javascript" src="js/parallel.js"></script>
+</body>
