@@ -31,6 +31,11 @@ h1{
   right: 50px;
 }
 
+.barchart {
+	position: absolute;
+	top: 330px;
+  right: 20px;
+}
 /* parallel ------------------------------------------------------------------------------ */
 #secondTitle{
 	width: 100%;
