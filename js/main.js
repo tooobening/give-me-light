@@ -624,7 +624,7 @@ var radius = Math.min(pieWidth, pieHeight)/2;
 var colorScale = d3.scaleOrdinal()
     .domain(data)
     .range(['#c8ed03','#5fb676','#142b5c','#9879a0','#992d22','#f5f4f4'])
-var pie = d3.select("body")
+var pie = d3.select(".pie")
     .append("svg")
     .attr("width", pieWidth)
     .attr("height", pieHeight)

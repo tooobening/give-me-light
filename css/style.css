@@ -19,10 +19,16 @@ h1{
 }
 #mapid { /*#id or .class*/
   height: 560px;
-	width: 80%;
-	margin-left: 10em;
+	width: 62%;
+	margin-left: 2em;
   display: inline-block;
 
+}
+
+.pie {
+	position: absolute;
+	top: 90px;
+  right: 50px;
 }
 
 /* parallel ------------------------------------------------------------------------------ */
@@ -34,7 +40,7 @@ h1{
 .palette{
 	margin: 0em 0em;
 	position:relative;
-	float:left;
+	float:right;
   }
 #p_chartTitle{
 	float: left;
