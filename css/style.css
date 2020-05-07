@@ -1,12 +1,92 @@
 body {
 	margin: 0;
+	background-color: black;
+
 }
-#map {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+#title{
+	text-align: center;
+}
+h1{
+	color:bisque;
+	font-family:"AlternateGothic2 BT";
+	letter-spacing: 6pt;
+
+}
+#mapid { /*#id or .class*/
+    height: 500px;
+	width: 80%;
+	margin-left: 2em;
+    display: inline-block;
+
+}
+/* parallel ------------------------------------------------------------------------------ */
+.palette{
+	margin: 0em 28em;
+	position:relative;
+	float:left;
+  }
+#p_chartTitle{
+	margin: 0pt;
+	text-align: center;
+	color:bisque;
+	font-family:"AlternateGothic2 BT";
+	font-size: 22pt;
 }
 
+.parallel{
+	float:left;
+	background-color:white;
+}
+.parallel-us{
+	float:left;
+	padding:0.1em;
+}
+.parallel-ca{
+	float:left;
+	padding:0.1em;
+}
+#button{
+	background-color: black;
+	padding:0.5em 1em;
+}
+.axis {
+	opacity: 0.4;
+}
+.axis:hover {
+	opacity: 1;
+}
+/* Axis tick */
+.tick text,line{
+	stroke:bisque;
+	fill:bisque;
+	font-size: 12pt;
+	font-family: 'Courier New', Courier, monospace;
+}
+/* Axis */
+.domain { 
+	stroke:cornsilk;
+}
+/* reset button */
+.myButton {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, bisque 5%, #f24437 100%);
+	background-color:bisque;
+	border-radius:15px;
+	border:1px solid bisque;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+
+/* --------------------------------------------Search--------------------------------------- */
 #geocode-selector {
 	position: absolute;
 	left: 10px;
@@ -36,11 +116,4 @@ body {
 
 #geocode-selector .selected:hover {
 	background-color: #49e;
-}
-
-#mapid { /*#id or .class*/
-    height: 480px;
-    width: 100%;
-    display: inline-block;
-
 }

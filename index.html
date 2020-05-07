@@ -10,41 +10,53 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@1.3.0/dist/css/L.Control.OpenCageData.Search.min.css" />
-
-        <!-- <link rel="stylesheet" href="lib/leaflet.css"> -->
- 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@1.3.0/dist/css/L.Control.OpenCageData.Search.min.css" />         
         <!--[if IE<9]>
             <link rel="stylesheet" href="css/style.ie.css">
         <![endif]-->
 
          <!--you can also place internal styles here;
-             place these within <style> tags-->
-        
+             place these within <style> tags-->   
     </head>
-
     <body>
         <!--put your initial page content here-->
         <div id ="title">
-            <h3>Find the lights@Northern America</h3>
-            <!-- <p><b>Geography Department, UW-Madison</b> </p> -->
+            <h1>Find the nearest northern lights around you!</h1>
+        </div>
+        <!-- map -->
+        <div id="mapid"></div>
+        <!-- parallel -->
+        <div id="button"><a href="#" class="myButton">Reset</a></div>
+        <h3 id ="p_chartTitle">Northern Lights Color Pallette</h3>
+        <svg class = "palette" width="700" height="40">
+        <g id="colorbar" transform="translate(40,10)"></g>
+        </svg>
+        <div class="parellel">
+        <!-- Create a div where the graph will take place -->
+        <div class="parallel-us">
+            <h3 id ="p_chartTitle">USA</p></div>
+        <div class="parallel-ca">
+        <h3 id ="p_chartTitle">Canada</p></div>
 
         </div>
-        <div id="mapid" style="width: 1300px; height: 650px; position: relative"></div>
-    
+
+        </div>
+        </div>
         <!-- Make sure you put this AFTER Leaflet's CSS -->
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
-        
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
         <!-- Add leaflet ajax for loading geojson --> 
         <!-- <script type="text/javascript" src="lib/leaflet.ajax.min.js"></script> -->
         <!--put your external script links here-->
-        <!-- <script type="text/javascript" src="lib/leaflet.js"></script> -->
+        <script src="https://d3js.org/d3.v4.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script> <!--concave hull-->
-        <script src="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@1.3.0/dist/js/L.Control.OpenCageSearch.min.js"></script> <!--search-->
-        <script type="text/javascript" src="lib/jquery-3.4.1.js"></script> -->
+        <!-- <script type="text/javascript" src="lib/jquery-3.4.1.js"></script> --> -->
         <!-- var geojson file -->
         <script type="text/javascript" src="js/northern.js"></script>
         <!-- Add your main code here -->
+        <script type="text/javascript" src="lib/L.Control.OpenCageSearch.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-    
+        <!-- <script type="text/javascript" src="js/parallel.js"></script> -->
+
+        <!-- <script type="text/javascript" src="northernPolygon.js"></script>    -->
     </body>
