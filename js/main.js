@@ -584,7 +584,7 @@ function turnoff(props){
             layer.bindPopup(feature.properties.month);
         },
         filter: function(feature, layer){
-            return !(feature.properties.month in notenable);
+            return !(feature.properties.month in notenable) && !(feature.properties.month in notenable);
         },
         pointToLayer: function(feature, latlng){
             return L.circleMarker(latlng, stylePoint(feature));
@@ -692,7 +692,7 @@ function turnoff2(props){
             layer.bindPopup(feature.properties.month);
         },
         filter: function(feature, layer){
-            return !(feature.properties.color_new in notenable);
+            return !(feature.properties.color_new in notenable) && !(feature.properties.month in notenable);
         },
         pointToLayer: function(feature, latlng){
             return L.circleMarker(latlng, stylePoint(feature));
