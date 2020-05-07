@@ -19,10 +19,16 @@ h1{
 }
 #mapid { /*#id or .class*/
   height: 560px;
-	width: 80%;
-	margin-left: 10em;
+	width: 62%;
+	margin-left: 2em;
   display: inline-block;
 
+}
+
+.pie {
+	position: absolute;
+	top: 90px;
+  right: 50px;
 }
 
 /* parallel ------------------------------------------------------------------------------ */
@@ -34,7 +40,7 @@ h1{
 .palette{
 	margin: 0em 0em;
 	position:relative;
-	float:left;
+	float:right;
   }
 #p_chartTitle{
 	float: left;
@@ -86,8 +92,7 @@ h1{
 /* reset button */
 .myButton {
 	/* box-shadow: 3px 4px 0px 0px #8a2a21; */
-	background:linear-gradient(to bottom, bisque 5%, #f24437 100%);
-	background-color:bisque;
+	background:linear-gradient(to bottom, #597ef7 5%, #ff63a7 100%);
 	border-radius:15px;
 	border:1px solid bisque;
 	display:inline-block;
