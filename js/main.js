@@ -86,7 +86,7 @@ var myIcon = L.icon({
 
 // -----------------------------------------defalut point data layer-------------------------------------------//
 // add circle marker for northern points data layer
-L.geoJSON(northern, {
+start = L.geoJSON(northern, {
   onEachFeature: onEachFeature,
   pointToLayer: function (feature, latlng) {
     return L.circleMarker(latlng,stylePoint(feature));
