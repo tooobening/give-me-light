@@ -12,22 +12,22 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     // subdomains: 'abcd',
     accessToken: 'pk.eyJ1IjoieXVuaW5nbGl1IiwiYSI6ImNrNm9tNDFhcDBpejgzZG1sdnJuaTZ4MzYifQ.qYhM3_wrbL6lyTTccNKx_g' //'your.mapbox.access.token'
 }).addTo(mymap);
-//----------------------------------image gallery-----------------------------------//
-//image gellery
-d3.json('data/northern.json', function(error, imgs) {
-  console.log('18',imgs)
-  // filter out posts without a thumbnail
-  var images = imgs.features.filter(function(d) {
-    return d.properties.url.slice(-3) == "jpg";
-  });
-  images.forEach(function(img) {
-    d3.select(".gallery")
-      .append("img")
-      .attr("class","galleryImage")
-      .attr("height",5)
-      .attr("src",img.properties.url);
-  });
-});
+// //----------------------------------image gallery-----------------------------------//
+// //image gellery
+// d3.json('data/northern.json', function(error, imgs) {
+//   console.log('18',imgs)
+//   // filter out posts without a thumbnail
+//   var images = imgs.features.filter(function(d) {
+//     return d.properties.url.slice(-3) == "jpg";
+//   });
+//   images.forEach(function(img) {
+//     d3.select(".gallery")
+//       .append("img")
+//       .attr("class","galleryImage")
+//       .attr("height",5)
+//       .attr("src",img.properties.url);
+//   });
+// });
 //---------------------------------------------------popup-----------------------------------------//
 //pop up for each northern point data
 function onEachFeature(feature, layer) {
@@ -86,7 +86,7 @@ var myIcon = L.icon({
 
 // -----------------------------------------defalut point data layer-------------------------------------------//
 // add circle marker for northern points data layer
-start = L.geoJSON(northern, {
+L.geoJSON(northern, {
   onEachFeature: onEachFeature,
   pointToLayer: function (feature, latlng) {
     return L.circleMarker(latlng,stylePoint(feature));
