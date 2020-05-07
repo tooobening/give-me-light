@@ -643,7 +643,7 @@ var rings = pie.selectAll('.rings')
         .outerRadius(radius)
     )
     .attr('fill', function(d) {return(colorScale(d.data.key)) })
-    .attr("stroke", "black")
+    .attr("stroke", "transparent")
     .style("stroke-width", "2px")
     .attr("class", function(d){
         return "rings " + d.data.key;
@@ -652,7 +652,7 @@ var rings = pie.selectAll('.rings')
     .on("mouseout", dehighlight)
     .on("click", turnoff2);
 var desc = rings.append("desc")
-    .text('{"stroke": "black", "stroke-width": "2px"}');
+    .text('{"stroke": "transparent", "stroke-width": "2px"}');
 
 //create click events
 var pointon;
