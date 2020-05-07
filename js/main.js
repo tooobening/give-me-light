@@ -233,15 +233,15 @@ d3.select('#colorbar')
 
 // set the dimensions and margins of the parallel graph
 var margin = {top: 30, right: 50, bottom: 10, left: 50},
-  width = 650 - margin.left - margin.right,
-  height = 500 - margin.top - margin.bottom;
+  width = 450 - margin.left - margin.right,
+  height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg_us = d3.select(".parallel-us")
 .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
-  .style('background-color','black')
+  .style('background-color','rgba(0, 0, 0, 0.6)')
 .append("g")
   .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
@@ -249,7 +249,7 @@ var svg_ca = d3.select(".parallel-ca")
 .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
-  .style('background-color','black')
+  .style('background-color','rgba(0, 0, 0, 0.6)')
 .append("g")
   .attr("transform",
   "translate(" + margin.left + "," + margin.top + ")");
