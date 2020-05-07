@@ -104,7 +104,7 @@ h1{
 }
 
 /* --------------------------------------------Search--------------------------------------- */
-#geocode-selector {
+/* #geocode-selector {
 	position: absolute;
 	left: 10px;
 	bottom: 10px;
@@ -133,7 +133,7 @@ h1{
 
 #geocode-selector .selected:hover {
 	background-color: #49e;
-}
+} */
 
 /*----------filter----------*/
 .chart {
