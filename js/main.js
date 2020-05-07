@@ -465,7 +465,7 @@ for (i=0; i<northern["features"].length; i++){
 //create bar chart for month count
 var chartWidth = 400;
 var chartHeight = 300;
-var chart = d3.select("body")
+var chart = d3.select(".barchart")
     .append("svg")
     .attr("width", chartWidth)
     .attr("height", chartHeight)
