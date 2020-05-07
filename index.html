@@ -24,19 +24,27 @@
             <h1>Find the nearest northern lights around you!</h1>
         </div>
         <!-- map -->
-        <div id="mapid"></div>
+        <div class = map>
+            <div id="mapid"></div>
+            <!-- <div class="gallery"></div> -->
+        </div>
         <!-- parallel -->
-        <div id="button"><a href="#" class="myButton">Reset</a></div>
-        <h3 id ="p_chartTitle">Northern Lights Color Pallette</h3>
+        <div id = "secondTitle">
+            <h3 id ="p_chartTitle">Northern Lights Color Pallette</h3>
+            <div id="button"><a href="javascript:void(0)" class="myButton">Reset</a></div>
+
+        </div>
+
         <svg class = "palette" width="700" height="40">
         <g id="colorbar" transform="translate(40,10)"></g>
         </svg>
+        </div>
         <div class="parellel">
         <!-- Create a div where the graph will take place -->
         <div class="parallel-us">
-            <h3 id ="p_chartTitle">USA</p></div>
+            <h3 id="p_chartSubTitle">USA</p></div>
         <div class="parallel-ca">
-        <h3 id ="p_chartTitle">Canada</p></div>
+        <h3 id="p_chartSubTitle">Canada</p></div>
 
         </div>
 
@@ -53,10 +61,10 @@
         <!-- <script type="text/javascript" src="lib/jquery-3.4.1.js"></script> --> -->
         <!-- var geojson file -->
         <script type="text/javascript" src="js/northern.js"></script>
+        <script type="text/javascript" src="js/test.js"></script>
         <!-- Add your main code here -->
         <script type="text/javascript" src="lib/L.Control.OpenCageSearch.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <!-- <script type="text/javascript" src="js/parallel.js"></script> -->
-
-        <!-- <script type="text/javascript" src="northernPolygon.js"></script>    -->
     </body>
+</html>
