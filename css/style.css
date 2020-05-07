@@ -13,35 +13,38 @@ h1{
 
 }
 #mapid { /*#id or .class*/
-    height: 500px;
+    height: 560px;
 	width: 80%;
 	margin-left: 2em;
     display: inline-block;
 
 }
-/* img gallery
-.map{
-	float:left;
-}
-#galleryPhoto {
-	float:left;
-	border-radius: 4px;
-	border:0em;
-} */
+
 /* parallel ------------------------------------------------------------------------------ */
+#secondTitle{
+	width: 100%;
+	margin: 1em;
+	text-align: center;
+}
 .palette{
-	margin: 0em 28em;
+	margin: 0em 0em;
 	position:relative;
 	float:left;
   }
 #p_chartTitle{
-	margin: 0pt;
+	float: left;
+	margin: 1em;
 	text-align: center;
 	color:bisque;
 	font-family:"AlternateGothic2 BT";
 	font-size: 22pt;
 }
-
+#p_chartSubTitle{
+	color:bisque;
+	font-family:"AlternateGothic2 BT";
+	margin-top: 0em;
+	font-size: 18pt;
+}
 .parallel{
 	float:left;
 	background-color:white;
@@ -56,7 +59,7 @@ h1{
 }
 #button{
 	background-color: black;
-	padding:0.5em 1em;
+	padding:0pt 0pt;
 }
 .axis {
 	opacity: 0.4;
