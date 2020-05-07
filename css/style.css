@@ -86,8 +86,7 @@ h1{
 /* reset button */
 .myButton {
 	/* box-shadow: 3px 4px 0px 0px #8a2a21; */
-	background:linear-gradient(to bottom, bisque 5%, #f24437 100%);
-	background-color:bisque;
+	background:linear-gradient(to bottom, #597ef7 5%, #ff63a7 100%);
 	border-radius:15px;
 	border:1px solid bisque;
 	display:inline-block;
