@@ -19,6 +19,15 @@ h1{
     display: inline-block;
 
 }
+/* img gallery
+.map{
+	float:left;
+}
+#galleryPhoto {
+	float:left;
+	border-radius: 4px;
+	border:0em;
+} */
 /* parallel ------------------------------------------------------------------------------ */
 .palette{
 	margin: 0em 28em;

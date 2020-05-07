@@ -12,7 +12,22 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     // subdomains: 'abcd',
     accessToken: 'pk.eyJ1IjoieXVuaW5nbGl1IiwiYSI6ImNrNm9tNDFhcDBpejgzZG1sdnJuaTZ4MzYifQ.qYhM3_wrbL6lyTTccNKx_g' //'your.mapbox.access.token'
 }).addTo(mymap);
-
+//----------------------------------image gallery-----------------------------------//
+//image gellery 
+d3.json('data/northern.json', function(error, imgs) {
+  console.log('18',imgs)
+  // filter out posts without a thumbnail
+  var images = imgs.features.filter(function(d) {
+    return d.properties.url.slice(-3) == "jpg";
+  });
+  images.forEach(function(img) {
+    d3.select(".gallery")
+      .append("img")
+      .attr("class","galleryImage")
+      .attr("height",5)
+      .attr("src",img.properties.url);
+  });
+});
 //---------------------------------------------------popup-----------------------------------------//
 //pop up for each northern point data
 function onEachFeature(feature, layer) {
@@ -49,9 +64,8 @@ function stylePoint(f){
   fillColor: f.properties.hex,//"#59d4ff",
   weight: 0,
   opacity: 1,
-  fillOpacity: 1
-};
-return styleObject
+  fillOpacity: 1};
+  return styleObject
 }
 //style for polygon data layer 
 function polystyle(feature) {
@@ -62,6 +76,7 @@ function polystyle(feature) {
       color: 'white',  //Outline color
   };
 }
+//custom icon 
 var myIcon = L.icon({
   iconUrl: 'img/fireworks.png',
   iconSize: [30, 45],
